@@ -1,0 +1,36 @@
+/* app css stylesheet */
+
+body {
+  padding:0px
+}
+
+.badge{
+height:40;
+width:40;
+display:block;
+}
+
+.epicStats span{
+	display:block;
+}
+
+/*
+li.green{
+color:green;
+}
+
+li.red{
+color:red;
+}
+
+.blue{
+color:blue;
+}
+
+.black{
+color:black;
+}
+
+.purple{
+color:purple;
+}*/

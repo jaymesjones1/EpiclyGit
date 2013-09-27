@@ -1,0 +1,27 @@
+{
+	"id": "7",
+	"name": "Sing in class",
+	"url" : "sing-in-class",
+	"snippet": "Break into random song a dance in the middle of class. You won't do it.",
+	"badge":"http://25.media.tumblr.com/48052bc0427c0c48a1a3f0777b0ff6d6/tumblr_mjyumk4gbK1rha3vbo1_400.png",
+	"points": 948,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 234,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 98,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"You have to sing loud enough for everyone to hear.",
+		"You can't pre-announce the singing. It has to be random."
+		
+	],
+	"images":[
+	"http://1.bp.blogspot.com/_e5CENKp5eYU/SC2DFaVwdqI/AAAAAAAAApE/e8d-XCeJhGQ/s320/teach.bmp"
+	]
+}

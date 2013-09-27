@@ -1,0 +1,27 @@
+{
+	"id": "6",
+	"name": "Try Standup Comedy",
+	"url" : "try-standup-comedy",
+	"snippet": "You won't believe the rush you get when you have a whole room laughing....or the humiliation when you hear nothing but crickets.",
+	"badge":"http://image.shutterstock.com/display_pic_with_logo/548344/548344,1330893186,2/stock-vector-vector-classic-microphone-symbol-badge-sign-sign-96707479.jpg",
+	"points": 1246,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 478,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 87,
+	"creator": "Spongebob",
+	"creatorImage": "http://images4.wikia.nocookie.net/__cb20090617143357/poohadventures/images/1/11/SpongeBob.jpg",
+	"category": "comedy",
+	"rules":[
+		"You actually have to try to tell a joke.",
+		"People must be present.",
+		"Your joke doesn't necessarily have to be funny."
+	],
+	"images":[
+	"http://www.okgazette.com/oklahoma/imgs/media.images/17816/speakeasy+comedy.jpg"
+	]
+}

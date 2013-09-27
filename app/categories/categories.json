@@ -1,0 +1,22 @@
+[ 
+	{
+		name: "Health and Fitness",
+		color: "red"
+	},
+	{
+		name: "Random",
+		color: "purple"
+	},
+	{
+		name: "Funny",
+		color: "green"
+	},
+	{
+		name: "Life Changing",
+		color: "blue"
+	},
+	{
+		name: "Business",
+		color: "Black"
+	}
+]

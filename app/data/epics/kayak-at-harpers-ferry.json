@@ -1,0 +1,26 @@
+{
+	"id": "12",
+	"name": "Kayak at Harper's Ferry",
+	"url" : "kayak-at-harpers-ferry",
+	"snippet": "I love me some kayaking. There's nothing like getting some fresh air on the open water.",
+	"badge":"http://ih.constantcontact.com/fs064/1104610490028/img/706.png?a=1110294350523",
+	"points": 1932,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 26,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 36,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Take a picture of the view from the summit."
+		
+	],
+	"images":[
+	"http://www.kokopellikayak.com/images/white-water-kayakingSM.jpg"
+	]
+}

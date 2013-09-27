@@ -1,0 +1,58 @@
+<myheader class="header" >
+		<iconswithback>
+		</iconswithback>
+</myheader>
+<div class="container epicMore">
+	
+	<div class="row image" ng-repeat="img in epic.images">
+		<img ng-src="{{img}}">
+		<div><img ng-src="{{epic.badge}}" class="badge"></div>
+		<div><img ng-src="{{epic.creatorImage}}" class="userPic"></div>
+		<div class="creatorName"> {{epic.creator}} </div>
+	</div>
+	<div class="epicInfo">
+		<div class="title">{{epic.name}}</div>
+		<div class = "stats"> {{epic.points}} pts  .  {{epic.difficulty}} difficulty <a class="edit" href="#" ng-click="toggleStats()" prevent>EDIT</a></div>
+		<div class="epicStats" ng-show="statsVisible">
+				<div class="pointsDiv row">
+					<a class="minus small-2 columns" href="#" prevent>
+						<i class="icon-minus"></i>
+					</a>
+					<div class="points small-8 columns">
+						{{epic.points}} <span class="small"> POINTS</span>
+					</div>
+					<a class="plus small-2 columns" href="#" prevent>
+						<i class="icon-plus"></i>
+					</a>
+				</div>
+				<div class="difficultyDiv">
+					<a class="minus small-2 columns" href="#" prevent>
+						<i class="icon-minus"></i>
+					</a>
+					<div class="difficulty small-8 columns">
+						{{epic.difficulty}} <span class="small"> DIFFICULTY</span>
+						<div ng-class = "difficultyClass" class="meter"> <div class="inner"></div></div>
+					</div>
+					<a class="plus small-2 columns" href="#" prevent>
+						<i class="icon-plus"></i>
+					</a>
+				</div>
+			</div>
+		<p>{{epic.snippet}}</p>
+		<div class="rules">
+		<span class="subhead">Rules</span>
+		
+		<ol>
+			<li ng-repeat="rule in epic.rules">{{rule}}</li>
+		</ol>
+		</div>
+	</div>
+	
+<div class="row">
+		<ul class="small-block-grid-3 epicDetailsActions">
+			<li><a href="#"> Remix </a></li>
+			<li><a href="#"> Share </a></li>
+			<li><a href="#"> Start </a></li>
+		</ul>
+</div>
+</div>

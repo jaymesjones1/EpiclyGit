@@ -1,0 +1,23 @@
+{
+	"id": "3",
+	"name": "Shoot an Arrow through an Apple",
+	"url" : "shoot-an-arrow-through-an-apple",
+	"snippet": "Simple. Have someone throw an apple in the air and shoot an arrow through it.",
+	"badge":"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfetZ6l7C48sUfLhYOJsCrmft5EdEHGWv81UEZo2miZ2drTjE__w",
+	"points": 3213,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 423,
+	"difficulty": 100,
+	"creator": "Winona",
+	"creatorImage": "http://www.theclassyhousewife.com/wp-content/uploads/2013/06/angelina-jolie-300x336.jpg",
+	"category": "random",
+	"rules":[
+		"The apple has to be in the air when you shoot it."
+	],
+	"images":[
+	"http://ak9.picdn.net/shutterstock/videos/4701596/preview/stock-footage-arrow-shooting-through-an-apple-in-slow-motion.jpg"
+	]
+}

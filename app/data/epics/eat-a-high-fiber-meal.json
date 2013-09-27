@@ -1,0 +1,27 @@
+{
+		"id": "10",
+	"name": "Eat a High Fiber Meal",
+	"url" : "eat-a-high-fiber-meal",
+	"snippet": "Fiber is good for digestion.",
+	"badge":"http://thumb10.shutterstock.com/thumb_small/1026019/150070208/stock-photo-tag-sticker-or-badge-for-healthy-weight-loss-diet-or-fitness-product-present-by-orange-badge-150070208.jpg",
+	"points": 18,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 26,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 91,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Post a picture of the meal.",
+		"Post a picture of the recipe."
+		
+	],
+	"images":[
+	"http://cdn.sheknows.com/articles/fiber-rich-foods.jpg"
+	]
+}

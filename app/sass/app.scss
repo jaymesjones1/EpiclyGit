@@ -1,0 +1,741 @@
+/* app css stylesheet */
+
+@import "compass/css3/border-radius";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+
+$dark: #424442;
+$heading: #4c4c4c;
+$salmon: #ee8164;
+$green: #06c6b1;
+$darkSalmon: #e66a4e;
+$darkGreen: #02b49c;
+$darkYellow: #e5b52d;
+
+body {
+  padding:0px;
+  margin:0px;
+  background-color:#ffffff;
+}
+
+body, h1, h2, h3, h4, h5, span {
+font-family: 'Open Sans',Verdana, Geneva, sans-serif !important;
+}
+
+div{
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+}
+
+.paddedForSearch{
+	padding:100px 0.75em 0.75em 0.75em;
+}
+.padded{
+	padding:52px 0.75em 0.75em 0.75em;
+}
+
+
+
+.epicContainer{
+	background-color:#e6e6e6;
+	height:auto;
+	min-height:100%;
+}
+
+
+.sort-wrap{
+	padding: 0;
+	text-align:center;
+	margin-bottom:0.75em;
+}
+
+.sort-pills{
+	display:inline-block;
+	margin:0 0 0.5em 0;
+	
+	li{
+		float:left;
+		a{
+			border-bottom:3px solid #d3d3d3;
+			font-size:0.85em;
+			padding:0 0.75em 0.25em 0.75em;
+			margin:0 auto;
+			color:#595959;
+			
+			&.active{
+				border-bottom:3px solid $salmon;
+				color:$salmon;
+			}
+		}
+		
+		
+	}
+}
+
+.styledSelect{
+	background-color:$dark;
+	color:#f2f2f2;
+	margin:0;
+	border:none;
+	padding:0.25em 0em 0.25em 0.75em;
+	font-size:1em;
+}
+
+.epic{
+	padding:0;
+	margin:0em 0em 2em 0em;
+	background-color:#fff;
+	border:1px solid #e6e6e6;
+	@include box-shadow (0px 1px 1px #ccc);
+
+	
+	
+	.epicInfo{
+		display:block;
+		padding:0.5em;
+		overflow:hidden;
+		background-color:#f9f9f9;
+		border-bottom:1px solid #e6e6e6;
+		
+		.badgeDiv{
+			padding:0;
+		}
+		
+		.nopadding{
+			padding:0;
+		}
+		
+		.badge{
+			height:40px;
+			width:40px;
+			display:block;
+			@include border-radius(50%,50%);
+			padding:0;
+			margin:0;
+		}
+		
+		.name{
+			line-height:1.25;
+			color:$heading;
+			font-weight:600;
+		}
+		
+		.nameDiv{
+			padding:0em 0.25em;
+			margin:0;
+			
+			.arrow{
+				line-height:40px;
+				color: #cccccc;
+				font-size:1.25em;
+			}
+			
+		}
+		
+	}
+	
+	.epicStats{
+		background-color:#fff;
+		padding:0.5em;
+		text-align:center;
+		overflow:hidden;
+	}
+	
+	.points{
+		font-size:1.25em;
+		color:#666666;
+		padding:0.5em 1em;
+		border-top:1px solid #e6e6e6;
+		border-bottom:1px solid #e6e6e6;
+	}
+	
+	.difficulty{
+		font-size:1.25em;
+		color:#666666;
+		padding:0.3em 1em;
+		border-top:1px solid #e6e6e6;
+		border-bottom:1px solid #e6e6e6;
+		
+	}
+	
+	.pointsDiv, .difficultyDiv{
+		margin-bottom:0.5em;
+	}
+	
+	
+	.small{
+		font-size:0.55em;
+		color:#808080;
+	}
+	
+	.minus{
+		font-size:1em;
+		background-color:$salmon;
+		border: 1px solid $darkSalmon;
+		padding:0.725em 0.5em;
+		color:#fff;
+	}
+	
+	.plus{
+		font-size:1em;
+		background-color:$green;
+		border: 1px solid $darkGreen;
+		padding:0.725em 0.5em;
+		color:#fff;
+	}
+	
+	
+	
+	.epicActions{
+		text-align:center;
+		padding:0;
+		margin:0;
+		border-top:1px solid #e6e6e6;
+		background-color:#f9f9f9;
+		line-height:0.15em;
+		font-size:0.85em;
+		
+		li{
+			padding:0;
+			margin:0;
+			a{
+				display:block;
+				color:#808080;
+				height:2.5em;
+				line-height:2.5em;
+				margin:0;
+				padding:0;
+			}
+		}
+	}
+	
+}
+
+	
+.search{
+	position:fixed;
+	top:40px;
+	left:0px;
+	background-color:$dark;
+	padding:0.25em 0.75em 0.75em 0.75em;
+	margin-bottom:0.25em;
+	z-index:9000;
+	width:100%;
+	
+	.refine{
+		display:block;
+		background-color:#000;
+		color:#f2f2f2;
+		line-height:26px;
+		font-size: 0.8em;
+		text-align:center;
+	}
+	
+	input{
+		margin:0;
+		height:30px;
+		font-size: 16px;
+		@include border-radius (20px);
+		padding:0px 10px;
+		position:relative;
+	}
+}
+
+.notifications, .myEpics{
+	position:absolute;
+	top:40px;
+	left:0px;
+	z-index:9000;
+	background-color:#fff;
+	width:100%;
+}
+
+.navMenu{
+	position:absolute;
+	top:40px;
+	left:0px;
+	z-index:9999;
+	background-color:lighten($dark,5);
+	width:80%;
+	padding:0em 0em 6em 0em;
+	
+	ul{
+		width:100%;
+		text-align:left;
+		
+		li{
+			border-top:1px solid $dark;
+			padding:0em 0.5em;
+			
+			&.userInfo{
+				padding: 0.5em 0.5em;
+				background-color:darken($dark,10);
+				color:#f2f2f2;
+				font-size:0.85em;
+				img{
+					@include border-radius(50%);
+					height:30px;
+					width:30px;
+					border:2px solid #f2f2f2;
+					margin-right:0.5em;
+				}
+				
+			}
+			
+			a{
+				font-size:0.85em;
+				font-weight:400;
+				display:block;
+				height:2.8em;
+				line-height:2.8em;
+				color:#f2f2f2;
+			}
+		
+		}
+	}
+	
+}
+
+
+.header{
+	height:40px;	
+	overflow:none;
+	background-color:$dark;
+	display:block;
+	padding:0.5em;
+	line-height:20px;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:9999;
+	font-weight:600;
+	font-size:1.25em;
+	
+	span.title{
+		color:#f2f2f2;
+	}
+
+	
+	i{
+		padding:0em 0.3em;
+		color:#f2f2f2;
+		&.right {
+			float:right;
+		}
+		&.hamburger {
+			float:left;
+		}
+	}
+	
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*epics page*/
+
+a.newEpic{
+	display:block;
+	text-align:center;
+	background-color:$green;
+	color:#fff;
+	
+	height:3em;
+	line-height:3em;
+}
+
+.categories{
+	margin:0;
+	padding:0;
+	li{
+		
+		border-top:1px solid #e5e5e5;
+		background-color:#f2f2f2;
+		padding:0;
+		a{
+			display:block;
+			color:$dark;
+			height:2.85em;
+			line-height:2.85em;
+			font-size:1em;
+			padding-left:0.75em;
+		}
+		
+		i{
+			height:2.85em;
+			line-height:2.85em;
+			margin-right:0.75em;
+			color:#ccc;
+		}
+	}
+}
+
+.dropdown-menu{
+	background-color:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;
+	border-bottom:1px solid #efefef;
+	@include single-box-shadow(#ccc, 0px, 1px, 6px);
+	width:inherit;
+	li{
+		border-bottom:1px solid #efefef;
+		padding:0.5em;
+		a{
+			display:block;
+			color:$dark;
+			
+			
+		}
+	}
+}
+
+.hidden{
+	position:absolute;
+	left:-9999px;
+}
+
+.shown{
+	position:relative;
+}
+
+
+/* -------------------------------------------------------------------------------------*/
+/* epics details page */
+.epicMore{
+	
+	.image{
+		position:relative;
+	}
+	
+	.badge{
+		height:60px;
+		width:60px;
+		position:absolute;
+		bottom:-30px;
+		left:0.5em;
+		@include border-radius(50%,50%);
+		border:3px solid #fff;
+		background-color:#fff;
+	}
+	
+	.userPic{
+	height:40px;
+	width:40px;
+	position:absolute;
+	bottom:-20px;
+	left:5em;
+	display:block;
+	@include border-radius(50%,50%);
+	border:3px solid #fff;
+	z-index:9000;
+	}
+	
+	.creatorName{
+	font-size:1em;
+	position:absolute;
+	bottom:-0.75em;
+	left:7em;
+	padding:0.05em 0.5em 0.05em 0.75em;
+	display:block;
+	border:2px solid #fff;
+	background-color:#fff;
+	color:$dark;
+	z-index:8000;
+	}
+	
+	.epicInfo{
+	
+		.epicStats{
+		padding:0.5em;
+		text-align:center;
+		overflow:hidden;
+	}
+	
+		.points{
+			font-size:1.25em;
+			color:#666666;
+			padding:0.5em 1em;
+			border-top:1px solid #e6e6e6;
+			border-bottom:1px solid #e6e6e6;
+			background-color:#fff;
+		}
+		
+		.difficulty{
+			font-size:1.25em;
+			color:#666666;
+			padding:0.3em 1em;
+			border-top:1px solid #e6e6e6;
+			border-bottom:1px solid #e6e6e6;
+			background-color:#fff;
+			
+		}
+		
+		.pointsDiv, .difficultyDiv{
+			margin-bottom:0.5em;
+		}
+		
+		
+		.small{
+			font-size:0.55em;
+			color:#808080;
+		}
+		
+		.minus{
+			font-size:1em;
+			background-color:$salmon;
+			border: 1px solid $darkSalmon;
+			padding:0.725em 0.5em;
+			color:#fff;
+		}
+		
+		.plus{
+			font-size:1em;
+			background-color:$green;
+			border: 1px solid $darkGreen;
+			padding:0.725em 0.5em;
+			color:#fff;
+		}
+	
+		width:100%;
+		padding:2.5em 0.75em 1.25em 0.75em;
+		background-color:#f9f9f9;
+		
+		.title{
+			font-size:1em;
+			font-weight:600;
+			color:#4c4c4c;
+		}
+		
+		.stats{
+			color:#999999;
+			font-size:0.875em;
+			padding:0.5em 0em 0.75em 0em;
+			border-bottom: 1px solid #dbdbdb;
+			display:block;
+		}
+		
+		.edit{
+			float:right;
+			color:#e66a4e;
+		}
+		
+		p{
+			color:#999;
+			padding:1em 0em 0em 0em;
+			font-size:0.875em;
+		}
+	}
+	
+	.rules{
+			
+			.subhead{
+				color:#4d4d4d;
+				text-transform:uppercase;
+				width:100%;
+				font-size:0.875em;
+			}
+			
+			.line{
+				height:1px;
+				width:100%;
+				background-color:#ededed;
+				margin-top:0.25em;
+			}
+			
+			ol{
+			color:#999;
+			padding:0.5em 0em 1em 1.5em;
+			font-size:0.875em;
+			
+			.li{
+				padding:0;
+				margin:0;
+			}
+			
+		}
+	}
+	
+	
+	.epicDetailsActions{
+		text-align:center;
+		position:fixed;
+		bottom:0;
+		left:0;
+		z-index:9999;
+		padding:0;
+		margin:0;
+		border-top:1px solid #e6e6e6;
+		background-color:#f2f2f2;
+		line-height:0.15em;
+		font-size:0.85em;
+		width:100%;
+		
+		li{
+			padding:0;
+			margin:0;
+			a{
+				display:block;
+				color:#808080;
+				height:3.5em;
+				line-height:3.5em;
+				margin:0;
+				padding:0;
+			}
+		}
+	}
+}
+
+
+.meter{
+	width:100%;
+	height:0.35em;
+	margin-top:0.05em;
+}
+
+.inner{
+	height:0.35em;
+}
+
+
+
+.forty-five{
+	background-color:#f9e382;
+	.inner{
+		width:45%;
+		background-color:$darkYellow;
+	}
+}
+
+.one {background-color:#97e8d9;.inner{width:1%;background-color:$darkGreen;}} 
+.two {background-color:#97e8d9;.inner{width:2%;background-color:$darkGreen;}} 
+.three {background-color:#97e8d9;.inner{width:3%;background-color:$darkGreen;}} 
+.four {background-color:#97e8d9;.inner{width:4%;background-color:$darkGreen;}} 
+.five {background-color:#97e8d9;.inner{width:5%;background-color:$darkGreen;}} 
+.six {background-color:#97e8d9;.inner{width:6%;background-color:$darkGreen;}} 
+.seven {background-color:#97e8d9;.inner{width:7%;background-color:$darkGreen;}} 
+.eight {background-color:#97e8d9;.inner{width:8%;background-color:$darkGreen;}} 
+.nine {background-color:#97e8d9;.inner{width:9%;background-color:$darkGreen;}} 
+.ten {background-color:#97e8d9;.inner{width:10%;background-color:$darkGreen;}} 
+.eleven {background-color:#97e8d9;.inner{width:11%;background-color:$darkGreen;}} 
+.twelve {background-color:#97e8d9;.inner{width:12%;background-color:$darkGreen;}} 
+.thirteen {background-color:#97e8d9;.inner{width:13%;background-color:$darkGreen;}} 
+.fourteen {background-color:#97e8d9;.inner{width:14%;background-color:$darkGreen;}} 
+.fifteen {background-color:#97e8d9;.inner{width:15%;background-color:$darkGreen;}} 
+.sixteen {background-color:#97e8d9;.inner{width:16%;background-color:$darkGreen;}} 
+.seventeen {background-color:#97e8d9;.inner{width:17%;background-color:$darkGreen;}} 
+.eighteen {background-color:#97e8d9;.inner{width:18%;background-color:$darkGreen;}} 
+.nineteen {background-color:#97e8d9;.inner{width:19%;background-color:$darkGreen;}} 
+.twenty- {background-color:#97e8d9;.inner{width:20%;background-color:$darkGreen;}} 
+.twenty-one {background-color:#97e8d9;.inner{width:21%;background-color:$darkGreen;}} 
+.twenty-two {background-color:#97e8d9;.inner{width:22%;background-color:$darkGreen;}} 
+.twenty-three {background-color:#97e8d9;.inner{width:23%;background-color:$darkGreen;}} 
+.twenty-four {background-color:#97e8d9;.inner{width:24%;background-color:$darkGreen;}} 
+.twenty-five {background-color:#97e8d9;.inner{width:25%;background-color:$darkGreen;}} 
+.twenty-six {background-color:#97e8d9;.inner{width:26%;background-color:$darkGreen;}} 
+.twenty-seven {background-color:#97e8d9;.inner{width:27%;background-color:$darkGreen;}} 
+.twenty-eight {background-color:#97e8d9;.inner{width:28%;background-color:$darkGreen;}} 
+.twenty-nine {background-color:#97e8d9;.inner{width:29%;background-color:$darkGreen;}} 
+.thirty- {background-color:#97e8d9;.inner{width:30%;background-color:$darkGreen;}} 
+.thirty-one {background-color:#97e8d9;.inner{width:31%;background-color:$darkGreen;}} 
+.thirty-two {background-color:#97e8d9;.inner{width:32%;background-color:$darkGreen;}} 
+.thirty-three {background-color:#97e8d9;.inner{width:33%;background-color:$darkGreen;}} 
+.thirty-four {background-color:#97e8d9;.inner{width:34%;background-color:$darkGreen;}} 
+.thirty-five {background-color:#97e8d9;.inner{width:35%;background-color:$darkGreen;}} 
+.thirty-six {background-color:#97e8d9;.inner{width:36%;background-color:$darkGreen;}} 
+.thirty-seven {background-color:#97e8d9;.inner{width:37%;background-color:$darkGreen;}} 
+.thirty-eight {background-color:#97e8d9;.inner{width:38%;background-color:$darkGreen;}} 
+.thirty-nine {background-color:#97e8d9;.inner{width:39%;background-color:$darkGreen;}} 
+.forty- {background-color:#f9e382;.inner{width:40%;background-color:$darkYellow;}}
+.forty-one {background-color:#f9e382;.inner{width:41%;background-color:$darkYellow;}} 
+.forty-two {background-color:#f9e382;.inner{width:42%;background-color:$darkYellow;}} 
+.forty-three {background-color:#f9e382;.inner{width:43%;background-color:$darkYellow;}} 
+.forty-four {background-color:#f9e382;.inner{width:44%;background-color:$darkYellow;}} 
+.forty-five {background-color:#f9e382;.inner{width:45%;background-color:$darkYellow;}} 
+.forty-six {background-color:#f9e382;.inner{width:46%;background-color:$darkYellow;}} 
+.forty-seven {background-color:#f9e382;.inner{width:47%;background-color:$darkYellow;}} 
+.forty-eight {background-color:#f9e382;.inner{width:48%;background-color:$darkYellow;}} 
+.forty-nine {background-color:#f9e382;.inner{width:49%;background-color:$darkYellow;}} 
+.fifty- {background-color:#f9e382;.inner{width:50%;background-color:$darkYellow;}} 
+.fifty-one {background-color:#f9e382;.inner{width:51%;background-color:$darkYellow;}} 
+.fifty-two {background-color:#f9e382;.inner{width:52%;background-color:$darkYellow;}} 
+.fifty-three {background-color:#f9e382;.inner{width:53%;background-color:$darkYellow;}} 
+.fifty-four {background-color:#f9e382;.inner{width:54%;background-color:$darkYellow;}} 
+.fifty-five {background-color:#f9e382;.inner{width:55%;background-color:$darkYellow;}} 
+.fifty-six {background-color:#f9e382;.inner{width:56%;background-color:$darkYellow;}} 
+.fifty-seven {background-color:#f9e382;.inner{width:57%;background-color:$darkYellow;}} 
+.fifty-eight {background-color:#f9e382;.inner{width:58%;background-color:$darkYellow;}} 
+.fifty-nine {background-color:#f9e382;.inner{width:59%;background-color:$darkYellow;}} 
+.sixty- {background-color:#f9e382;.inner{width:60%;background-color:$darkYellow;}} 
+.sixty-one {background-color:#f7a397;.inner{width:61%;background-color:$darkSalmon;}} 
+.sixty-two {background-color:#f7a397;.inner{width:62%;background-color:$darkSalmon;}} 
+.sixty-three {background-color:#f7a397;.inner{width:63%;background-color:$darkSalmon;}} 
+.sixty-four {background-color:#f7a397;.inner{width:64%;background-color:$darkSalmon;}} 
+.sixty-five {background-color:#f7a397;.inner{width:65%;background-color:$darkSalmon;}} 
+.sixty-six {background-color:#f7a397;.inner{width:66%;background-color:$darkSalmon;}} 
+.sixty-seven {background-color:#f7a397;.inner{width:67%;background-color:$darkSalmon;}} 
+.sixty-eight {background-color:#f7a397;.inner{width:68%;background-color:$darkSalmon;}} 
+.sixty-nine {background-color:#f7a397;.inner{width:69%;background-color:$darkSalmon;}} 
+.seventy- {background-color:#f7a397;.inner{width:70%;background-color:$darkSalmon;}} 
+.seventy-one {background-color:#f7a397;.inner{width:71%;background-color:$darkSalmon;}} 
+.seventy-two {background-color:#f7a397;.inner{width:72%;background-color:$darkSalmon;}} 
+.seventy-three {background-color:#f7a397;.inner{width:73%;background-color:$darkSalmon;}} 
+.seventy-four {background-color:#f7a397;.inner{width:74%;background-color:$darkSalmon;}} 
+.seventy-five {background-color:#f7a397;.inner{width:75%;background-color:$darkSalmon;}} 
+.seventy-six {background-color:#f7a397;.inner{width:76%;background-color:$darkSalmon;}} 
+.seventy-seven {background-color:#f7a397;.inner{width:77%;background-color:$darkSalmon;}} 
+.seventy-eight {background-color:#f7a397;.inner{width:78%;background-color:$darkSalmon;}} 
+.seventy-nine {background-color:#f7a397;.inner{width:79%;background-color:$darkSalmon;}} 
+.eighty- {background-color:#f7a397;.inner{width:80%;background-color:$darkSalmon;}} 
+.eighty-one {background-color:#f7a397;.inner{width:81%;background-color:$darkSalmon;}} 
+.eighty-two {background-color:#f7a397;.inner{width:82%;background-color:$darkSalmon;}} 
+.eighty-three {background-color:#f7a397;.inner{width:83%;background-color:$darkSalmon;}} 
+.eighty-four {background-color:#f7a397;.inner{width:84%;background-color:$darkSalmon;}} 
+.eighty-five {background-color:#f7a397;.inner{width:85%;background-color:$darkSalmon;}} 
+.eighty-six {background-color:#f7a397;.inner{width:86%;background-color:$darkSalmon;}} 
+.eighty-seven {background-color:#f7a397;.inner{width:87%;background-color:$darkSalmon;}} 
+.eighty-eight {background-color:#f7a397;.inner{width:88%;background-color:$darkSalmon;}} 
+.eighty-nine {background-color:#f7a397;.inner{width:89%;background-color:$darkSalmon;}} 
+.ninety- {background-color:#f7a397;.inner{width:90%;background-color:$darkSalmon;}} 
+.ninety-one {background-color:#f7a397;.inner{width:91%;background-color:$darkSalmon;}} 
+.ninety-two {background-color:#f7a397;.inner{width:92%;background-color:$darkSalmon;}} 
+.ninety-three {background-color:#f7a397;.inner{width:93%;background-color:$darkSalmon;}} 
+.ninety-four {background-color:#f7a397;.inner{width:94%;background-color:$darkSalmon;}} 
+.ninety-five {background-color:#f7a397;.inner{width:95%;background-color:$darkSalmon;}} 
+.ninety-six {background-color:#f7a397;.inner{width:96%;background-color:$darkSalmon;}} 
+.ninety-seven {background-color:#f7a397;.inner{width:97%;background-color:$darkSalmon;}} 
+.ninety-eight {background-color:#f7a397;.inner{width:98%;background-color:$darkSalmon;}} 
+.ninety-nine {background-color:#f7a397;.inner{width:99%;background-color:$darkSalmon;}} 
+.one-hundred {background-color:#f7a397;.inner{width:100%;background-color:$darkSalmon;}} 
+
+.forty-five{
+	background-color:#f9e382;
+	.inner{
+		width:45%;
+		background-color:$darkYellow;
+	}
+}
+
+/*
+li.green{
+color:green;
+}
+
+li.red{
+color:red;
+}
+
+.blue{
+color:blue;
+}
+
+.black{
+color:black;
+}
+
+.purple{
+color:purple;
+}*/

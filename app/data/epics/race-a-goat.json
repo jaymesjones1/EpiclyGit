@@ -1,0 +1,26 @@
+{
+	'id': '5',
+	'name': 'Race a goat',
+	'url' : 'race-a-goat',
+	'snippet': 'Them goats be super fast yo.',
+	'badge':'http://www.shibleysmiles.com/wp-content/uploads/2012/10/Vote-Goat-Badge.png',
+	'points': 256,
+	'days': 7,
+	'hours': 0,
+	'minutes': 0,
+	'comments': [],
+	'num props' : 113,
+	'numSuccess' : 134,
+	'numFailed': 982,
+	'successRate': 97,
+	'creator': 'Spongebob',
+	'creatorImage': 'http://images4.wikia.nocookie.net/__cb20090617143357/poohadventures/images/1/11/SpongeBob.jpg',
+	'category': 'random',
+	'rules':[
+		'Must be a distance of at least 50 yards.',
+		'You don't necessarily have to win. Cuz them goats be super fast yo.'
+	],
+	'images':[
+	'http://i.imgur.com/Ar7qsWk.jpg'
+	]
+}

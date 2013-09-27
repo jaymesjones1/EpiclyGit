@@ -1,0 +1,26 @@
+{
+	"id": "1",
+	"name": "Meet 100 People in One Week",
+	"url" : "meet-100-people-in-one-week",
+	"snippet": "This helped me grow out of my shell and get out there and make some new friends.",
+	"badge":"https://cdn1.iconfinder.com/data/icons/windows-8-metro-style/512/handshake.png",
+	"points": 3213,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"numProps" : 423,
+	"numSuccess" : 1234,
+	"numFailed": 2345,
+	"successRate": 34,
+	"creator": "Daniel",
+	"creatorImage": "http://cdnimg.visualizeus.com/thumbs/17/f7/17f7fa0f3f88fac46f04fb99bd002fe9_m.jpg",
+	"category": "random",
+	"rules":[
+		"Take a picture of you shaking hands with the person",
+		"Cannot meet the same person more than once"
+	],
+	"images":[
+	"http://aprilbraswell.com/blog/wp-content/uploads/2011/05/Attractive-Brunette-Woman-Talking-at-a-Bar-w-a-Guy.jpg"
+	]
+}

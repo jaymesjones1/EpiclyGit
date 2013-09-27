@@ -1,0 +1,20 @@
+<myheader class="header">
+		<icons title="Epics"></icons>
+		
+</myheader>
+<div class='search' ng-controller="TypeaheadCtrl">
+    <input type="text" placeholder="Search for epics" ng-model="selected" typeahead="epic.name for epic in epics | filter:$viewValue | limitTo:8"typeahead-on-select="onSelect($item, $model, $label)" typeahead-min-length="2" ng-init=""/>
+</div>
+<div class="container paddedForSearch">
+	<a class="newEpic" href="#"><i class="icon-plus"></i> New Epic</a>
+</div>	
+	<ul class="categories">
+		<li class="small-12 columns"><a href="#/epics/random/">Random<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/comedy/">Comedy<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/health-and-fitness/">Health &amp; Fitness<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/outdoors/">Outdoors<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/travel/">Travel<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/sports/">Sports<i class="icon-chevron-right right"></i></a></li>
+		<li class="small-12 columns"><a href="#/epics/business/">Business<i class="icon-chevron-right right"></i></a></li>
+	</ul>
+</div>

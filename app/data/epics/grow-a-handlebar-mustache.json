@@ -1,0 +1,26 @@
+{
+	"id": "2",
+	"name": "Grow a Handlebar Mustache",
+	"url" : "grow-a-handlebar-mustache",
+	"snippet": "This'll have you lookin' good for the ladies.",
+	"badge":"http://www.antleragency.com/wp-content/uploads/2010/04/antler_foursqaure_badge_your_cool-300x297.png",
+	"points": 123,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 423,
+	"numSuccess" : 1234,
+	"numFailed": 2345,
+	"successRate": 87,
+	"creator": "Jeremy",
+	"creatorImage": "http://www4.pictures.zimbio.com/gi/Hugh+Jackman+Photo+Call+Hv9cbGPTWm-l.jpg",
+	"category": "random",
+	"rules":[
+		"Post a picture of your stache.",
+		"The ends must actually curl!"
+	],
+	"images":[
+	"http://stevenarch.tymoon.eu/fab/src/132322233358.jpg"
+	]
+}

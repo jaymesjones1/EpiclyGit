@@ -1,0 +1,24 @@
+{
+	"id": "4",
+	"name": "Act like a pirate for a week",
+	"url" : "act-like-a-pirate-for-a-week",
+	"snippet": "Argh, ye be actin' like a pirate for a week laddy, or ye'll walk the plank.",
+	"badge":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSUH1KDhPvBPcwdEcV9ZFvWoT5lLntZTVMYxi0nBUdjmgPV7Lq",
+	"points": 2456,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 113,
+	"difficulty" : 32,
+	"creator": "Skipper",
+	"creatorImage": "http://www.eonline.com/resize/300/300/www.eonline.com/eol_images/Entire_Site/2013423/rs_300x300-130523113849-600.alba.cm.52313.jpg",
+	"category": "random",
+	"rules":[
+		"Don't break character!",
+		"Pretty much required to not have a job or any responsibilities."
+	],
+	"images":[
+	"http://www.talklikeapirate.com/graphics/Pirateguys_portrait_2005.jpg"
+	]
+}

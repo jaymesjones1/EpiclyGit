@@ -1,0 +1,26 @@
+{
+		"id": "8",
+	"name": "Prank a friend",
+	"url" : "prank-a-friend",
+	"snippet": "Do any prank on a friend, because what are friends for if they're not for pranking each other?",
+	"badge":"http://ecx.images-amazon.com/images/I/31Wk6DE1hqL.jpg",
+	"points": 128,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 56,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 95,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Get the reaction on camera"
+		
+	],
+	"images":[
+	"http://wac.450f.edgecastcdn.net/80450F/banana1015.com/files/2012/10/scare-630.jpg"
+	]
+}

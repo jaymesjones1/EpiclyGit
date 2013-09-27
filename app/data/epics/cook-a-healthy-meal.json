@@ -1,0 +1,27 @@
+{
+		"id": "9",
+	"name": "Cook a Healthy Meal",
+	"url" : "cook-a-healthy-meal",
+	"snippet": "Sometimes the journey to a healthier lifestyle starts with babysteps, such as cooking yourself a simple, healthy meal.",
+	"badge":"http://www.koolbadges.co.uk/images/thumbnails/biggreenbrocolli-200x200.jpg",
+	"points": 13,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 24,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 98,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Post a picture of the meal.",
+		"Post a picture of the recipe."
+		
+	],
+	"images":[
+	"http://www.empowernetwork.com/aaronchen1/files/2013/04/Healthy-30-Minute-Meals.jpg"
+	]
+}

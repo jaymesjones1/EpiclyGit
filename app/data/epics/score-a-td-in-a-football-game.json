@@ -1,0 +1,27 @@
+{
+	"id": "14",
+	"name": "Score a TD in a Football Game",
+	"url" : "score-a-td-in-a-football-game",
+	"snippet": "It's simple, score a touchdown in a football game...pickup, flag, or full pads.",
+	"badge":"http://image.shutterstock.com/display_pic_with_logo/923585/120182824/stock-vector-vector-american-football-badge-vector-american-football-labels-american-football-emblems-120182824.jpg",
+	"points": 3032,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 26,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 56,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Get a picture of you celebrating in the endzone.",
+		"It has to be apparent in the picture that you're at an actual football game."
+		
+	],
+	"images":[
+	"http://www.schriever.af.mil/shared/media/photodb/web/090929-F-8228P-002.jpg"
+	]
+}

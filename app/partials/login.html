@@ -1,0 +1,15 @@
+<form class='form-inline' name='loginForm' ng-submit="submitLogin()" ng-controller="LoginCtrl">
+    Name <input type='text' name='user' ng-model='loginUser' required>&nbsp;
+    Password <input type='password' name='pass' ng-model='loginPass' required>&nbsp;
+    <button class='btn' type="submit">Login</button>&nbsp;
+</form>
+<div class='alert alert-info' ng-show='showInfo'>
+    <button class='btn' ng-click='server.logout()'>Logout</button>
+    <br><br>
+    <pre>server.userCtx = {{ server.userCtx | json }}</pre>
+    <pre>server.info = {{ server.info | json }}<pre>
+    <pre>server.databases = {{ server.databases | json }}</pre>
+    <pre>server.uuids = {{ server.uuids | json }}</pre>
+    <pre>server.userDoc = {{ server.userDoc | json }}</pre>
+    <pre>gbookdb.info = {{ gbookdb.info | json }}</pre>
+</div>

@@ -1,0 +1,26 @@
+{
+	"id": "11",
+	"name": "Hike Sugarloaf Mountain",
+	"url" : "hike-sugarloaf-mountain",
+	"snippet": "Sugarloaf is a great place to go hiking. Feeling extra adventurous? Climb some rocks.",
+	"badge":"http://www.leanteen.com/file/pic/badge/2013/04/30f5ea5251329efd5b94bd2040c1d2b6.png",
+	"points": 164,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 26,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 76,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"Take a picture of the view from the summit."
+		
+	],
+	"images":[
+	"http://www.hikingupward.com/OMH/SugarloafMountain/images/060411/P6040017.jpg"
+	]
+}

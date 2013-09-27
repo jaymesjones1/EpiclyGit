@@ -1,0 +1,27 @@
+{
+	"id": "13",
+	"name": "Roadtrip Across the US",
+	"url" : "roadtrip-across-the-us",
+	"snippet": "I roadtripped across the counry with a few friends last summer and it was a life changing experience. If you have the time and money, totally worth it.",
+	"badge":"http://www.carrentalexpress.com/images/contest/road_trip_america_badge.jpg",
+	"points": 7032,
+	"days": 7,
+	"hours": 0,
+	"minutes": 0,
+	"comments": [],
+	"num props" : 26,
+	"numSuccess" : 134,
+	"numFailed": 982,
+	"successRate": 14,
+	"creator": "George",
+	"creatorImage": "http://www.backgroundsdesktop.org/wallpapers/george_clooney_black_and_white_background-1280x800.jpg",
+	"category": "comedy",
+	"rules":[
+		"You must go from coast to coast.",
+		"Post a picture of you next to a 'Welcome to' sign for each state you visit."
+		
+	],
+	"images":[
+	"http://www.kennymcnett.com/me/blog/uploaded_images/enteringCalifornia-791831.jpg"
+	]
+}

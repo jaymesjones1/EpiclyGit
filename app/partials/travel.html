@@ -1,0 +1,65 @@
+
+<myheader class="header" >
+		<iconswithback title="Travel">
+		</iconswithback>
+</myheader>
+<div ng-controller="EpicCtrl">
+	<div class="search small-12 columns">
+			<input type="text" ng-model="search" placeholder="Search for epics">
+		</div>
+	<div class="container paddedForSearch epicContainer">
+		<div class="sort-wrap">
+			<ul class = "sort-pills">
+				<li><a prevent ng-class="{'active': order=='-points'}" ng-click="setOrder('-points')">By Points</a></li>
+				<li><a prevent ng-class="{'active': order=='name'}" ng-click="setOrder('name')">By Name</a></li>
+				<li><a prevent ng-class="{'active': order=='-successRate'}" ng-click="setOrder('-successRate')">By Difficulty</a></li>
+			</ul>
+		</div>
+		<div ng-repeat="epic in epics | filter:search | orderBy:order | filter:{category:'travel'}" ng-controller="EpicCtrl" class="epic" >
+			<a class="epicInfo" href="#/epics/travel/{{epic.url}}">
+				<div class="small-2 columns badgeDiv">
+					<img ng-src="{{epic.badge}}" class="badge"></img>
+				</div>
+				<div class="small-10 columns nameDiv">
+					<span class="name small-11 columns nopadding">{{epic.name}}</span>
+					<i class="icon-chevron-right small-1 columns nopadding arrow"></i>
+				</div>
+			</a>
+			<div class="epicStats">
+				<div class="pointsDiv row">
+					<a class="minus small-2 columns" href="#" prevent>
+						<i class="icon-minus"></i>
+					</a>
+					<div class="points small-8 columns">
+						{{epic.points}} <span class="small"> POINTS</span>
+					</div>
+					<a class="plus small-2 columns" href="#" prevent>
+						<i class="icon-plus"></i>
+					</a>
+				</div>
+				<div class="difficultyDiv">
+					<a class="minus small-2 columns" href="#" prevent>
+						<i class="icon-minus"></i>
+					</a>
+					<div class="difficulty small-8 columns">
+						{{epic.difficulty}} <span class="small"> DIFFICULTY</span>
+						<div ng-class = "difficultyClass" class="meter"> <div class="inner"></div></div>
+					</div>
+					<a class="plus small-2 columns" href="#" prevent>
+						<i class="icon-plus"></i>
+					</a>
+				</div>
+			</div>
+			
+			
+			<ul class="row">
+				<div class="small-block-grid-3 epicActions">
+					<li><a href="#"> Remix </a></li>
+					<li><a href="#"> Share </a></li>
+					<li><a href="#"> Start </a></li>
+				</div>
+			</ul>
+		</div>	
+	</div>
+</div>
+

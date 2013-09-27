@@ -1,0 +1,1640 @@
+/* app css stylesheet */
+/* line 15, ../sass/app.scss */
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+/* line 21, ../sass/app.scss */
+body, h1, h2, h3, h4, h5, span {
+  font-family: 'Open Sans',Verdana, Geneva, sans-serif !important;
+}
+
+/* line 25, ../sass/app.scss */
+div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+}
+
+/* line 30, ../sass/app.scss */
+.paddedForSearch {
+  padding: 100px 0.75em 0.75em 0.75em;
+}
+
+/* line 33, ../sass/app.scss */
+.padded {
+  padding: 52px 0.75em 0.75em 0.75em;
+}
+
+/* line 39, ../sass/app.scss */
+.epicContainer {
+  background-color: #e6e6e6;
+  height: auto;
+  min-height: 100%;
+}
+
+/* line 46, ../sass/app.scss */
+.sort-wrap {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 0.75em;
+}
+
+/* line 52, ../sass/app.scss */
+.sort-pills {
+  display: inline-block;
+  margin: 0 0 0.5em 0;
+}
+/* line 56, ../sass/app.scss */
+.sort-pills li {
+  float: left;
+}
+/* line 58, ../sass/app.scss */
+.sort-pills li a {
+  border-bottom: 3px solid #d3d3d3;
+  font-size: 0.85em;
+  padding: 0 0.75em 0.25em 0.75em;
+  margin: 0 auto;
+  color: #595959;
+}
+/* line 65, ../sass/app.scss */
+.sort-pills li a.active {
+  border-bottom: 3px solid #ee8164;
+  color: #ee8164;
+}
+
+/* line 75, ../sass/app.scss */
+.styledSelect {
+  background-color: #424442;
+  color: #f2f2f2;
+  margin: 0;
+  border: none;
+  padding: 0.25em 0em 0.25em 0.75em;
+  font-size: 1em;
+}
+
+/* line 84, ../sass/app.scss */
+.epic {
+  padding: 0;
+  margin: 0em 0em 2em 0em;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  -webkit-box-shadow: 0px 1px 1px #cccccc;
+  -moz-box-shadow: 0px 1px 1px #cccccc;
+  box-shadow: 0px 1px 1px #cccccc;
+}
+/* line 93, ../sass/app.scss */
+.epic .epicInfo {
+  display: block;
+  padding: 0.5em;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 100, ../sass/app.scss */
+.epic .epicInfo .badgeDiv {
+  padding: 0;
+}
+/* line 104, ../sass/app.scss */
+.epic .epicInfo .nopadding {
+  padding: 0;
+}
+/* line 108, ../sass/app.scss */
+.epic .epicInfo .badge {
+  height: 40px;
+  width: 40px;
+  display: block;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  padding: 0;
+  margin: 0;
+}
+/* line 117, ../sass/app.scss */
+.epic .epicInfo .name {
+  line-height: 1.25;
+  color: #4c4c4c;
+  font-weight: 600;
+}
+/* line 123, ../sass/app.scss */
+.epic .epicInfo .nameDiv {
+  padding: 0em 0.25em;
+  margin: 0;
+}
+/* line 127, ../sass/app.scss */
+.epic .epicInfo .nameDiv .arrow {
+  line-height: 40px;
+  color: #cccccc;
+  font-size: 1.25em;
+}
+/* line 137, ../sass/app.scss */
+.epic .epicStats {
+  background-color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 144, ../sass/app.scss */
+.epic .points {
+  font-size: 1.25em;
+  color: #666666;
+  padding: 0.5em 1em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 152, ../sass/app.scss */
+.epic .difficulty {
+  font-size: 1.25em;
+  color: #666666;
+  padding: 0.3em 1em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 161, ../sass/app.scss */
+.epic .pointsDiv, .epic .difficultyDiv {
+  margin-bottom: 0.5em;
+}
+/* line 166, ../sass/app.scss */
+.epic .small {
+  font-size: 0.55em;
+  color: #808080;
+}
+/* line 171, ../sass/app.scss */
+.epic .minus {
+  font-size: 1em;
+  background-color: #ee8164;
+  border: 1px solid #e66a4e;
+  padding: 0.725em 0.5em;
+  color: #fff;
+}
+/* line 179, ../sass/app.scss */
+.epic .plus {
+  font-size: 1em;
+  background-color: #06c6b1;
+  border: 1px solid #02b49c;
+  padding: 0.725em 0.5em;
+  color: #fff;
+}
+/* line 189, ../sass/app.scss */
+.epic .epicActions {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+  background-color: #f9f9f9;
+  line-height: 0.15em;
+  font-size: 0.85em;
+}
+/* line 198, ../sass/app.scss */
+.epic .epicActions li {
+  padding: 0;
+  margin: 0;
+}
+/* line 201, ../sass/app.scss */
+.epic .epicActions li a {
+  display: block;
+  color: #808080;
+  height: 2.5em;
+  line-height: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 215, ../sass/app.scss */
+.search {
+  position: fixed;
+  top: 40px;
+  left: 0px;
+  background-color: #424442;
+  padding: 0.25em 0.75em 0.75em 0.75em;
+  margin-bottom: 0.25em;
+  z-index: 9000;
+  width: 100%;
+}
+/* line 225, ../sass/app.scss */
+.search .refine {
+  display: block;
+  background-color: #000;
+  color: #f2f2f2;
+  line-height: 26px;
+  font-size: 0.8em;
+  text-align: center;
+}
+/* line 234, ../sass/app.scss */
+.search input {
+  margin: 0;
+  height: 30px;
+  font-size: 16px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  padding: 0px 10px;
+  position: relative;
+}
+
+/* line 244, ../sass/app.scss */
+.notifications, .myEpics {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 9000;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 253, ../sass/app.scss */
+.navMenu {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 9999;
+  background-color: #4f514f;
+  width: 80%;
+  padding: 0em 0em 6em 0em;
+}
+/* line 262, ../sass/app.scss */
+.navMenu ul {
+  width: 100%;
+  text-align: left;
+}
+/* line 266, ../sass/app.scss */
+.navMenu ul li {
+  border-top: 1px solid #424442;
+  padding: 0em 0.5em;
+}
+/* line 270, ../sass/app.scss */
+.navMenu ul li.userInfo {
+  padding: 0.5em 0.5em;
+  background-color: #292a29;
+  color: #f2f2f2;
+  font-size: 0.85em;
+}
+/* line 275, ../sass/app.scss */
+.navMenu ul li.userInfo img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #f2f2f2;
+  margin-right: 0.5em;
+}
+/* line 285, ../sass/app.scss */
+.navMenu ul li a {
+  font-size: 0.85em;
+  font-weight: 400;
+  display: block;
+  height: 2.8em;
+  line-height: 2.8em;
+  color: #f2f2f2;
+}
+
+/* line 300, ../sass/app.scss */
+.header {
+  height: 40px;
+  overflow: none;
+  background-color: #424442;
+  display: block;
+  padding: 0.5em;
+  line-height: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+/* line 316, ../sass/app.scss */
+.header span.title {
+  color: #f2f2f2;
+}
+/* line 321, ../sass/app.scss */
+.header i {
+  padding: 0em 0.3em;
+  color: #f2f2f2;
+}
+/* line 324, ../sass/app.scss */
+.header i.right {
+  float: right;
+}
+/* line 327, ../sass/app.scss */
+.header i.hamburger {
+  float: left;
+}
+
+/*---------------------------------------------------------------------------*/
+/*epics page*/
+/* line 339, ../sass/app.scss */
+a.newEpic {
+  display: block;
+  text-align: center;
+  background-color: #06c6b1;
+  color: #fff;
+  height: 3em;
+  line-height: 3em;
+}
+
+/* line 349, ../sass/app.scss */
+.categories {
+  margin: 0;
+  padding: 0;
+}
+/* line 352, ../sass/app.scss */
+.categories li {
+  border-top: 1px solid #e5e5e5;
+  background-color: #f2f2f2;
+  padding: 0;
+}
+/* line 357, ../sass/app.scss */
+.categories li a {
+  display: block;
+  color: #424442;
+  height: 2.85em;
+  line-height: 2.85em;
+  font-size: 1em;
+  padding-left: 0.75em;
+}
+/* line 366, ../sass/app.scss */
+.categories li i {
+  height: 2.85em;
+  line-height: 2.85em;
+  margin-right: 0.75em;
+  color: #ccc;
+}
+
+/* line 375, ../sass/app.scss */
+.dropdown-menu {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-bottom: 1px solid #efefef;
+  -webkit-box-shadow: 0px 1px 6px #cccccc;
+  -moz-box-shadow: 0px 1px 6px #cccccc;
+  box-shadow: 0px 1px 6px #cccccc;
+  width: inherit;
+}
+/* line 384, ../sass/app.scss */
+.dropdown-menu li {
+  border-bottom: 1px solid #efefef;
+  padding: 0.5em;
+}
+/* line 387, ../sass/app.scss */
+.dropdown-menu li a {
+  display: block;
+  color: #424442;
+}
+
+/* line 396, ../sass/app.scss */
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* line 401, ../sass/app.scss */
+.shown {
+  position: relative;
+}
+
+/* -------------------------------------------------------------------------------------*/
+/* epics details page */
+/* line 410, ../sass/app.scss */
+.epicMore .image {
+  position: relative;
+}
+/* line 414, ../sass/app.scss */
+.epicMore .badge {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: -30px;
+  left: 0.5em;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  border: 3px solid #fff;
+  background-color: #fff;
+}
+/* line 425, ../sass/app.scss */
+.epicMore .userPic {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: 5em;
+  display: block;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+  border: 3px solid #fff;
+  z-index: 9000;
+}
+/* line 437, ../sass/app.scss */
+.epicMore .creatorName {
+  font-size: 1em;
+  position: absolute;
+  bottom: -0.75em;
+  left: 7em;
+  padding: 0.05em 0.5em 0.05em 0.75em;
+  display: block;
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #424442;
+  z-index: 8000;
+}
+/* line 450, ../sass/app.scss */
+.epicMore .epicInfo {
+  width: 100%;
+  padding: 2.5em 0.75em 1.25em 0.75em;
+  background-color: #f9f9f9;
+}
+/* line 452, ../sass/app.scss */
+.epicMore .epicInfo .epicStats {
+  padding: 0.5em;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 458, ../sass/app.scss */
+.epicMore .epicInfo .points {
+  font-size: 1.25em;
+  color: #666666;
+  padding: 0.5em 1em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+/* line 467, ../sass/app.scss */
+.epicMore .epicInfo .difficulty {
+  font-size: 1.25em;
+  color: #666666;
+  padding: 0.3em 1em;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #fff;
+}
+/* line 477, ../sass/app.scss */
+.epicMore .epicInfo .pointsDiv, .epicMore .epicInfo .difficultyDiv {
+  margin-bottom: 0.5em;
+}
+/* line 482, ../sass/app.scss */
+.epicMore .epicInfo .small {
+  font-size: 0.55em;
+  color: #808080;
+}
+/* line 487, ../sass/app.scss */
+.epicMore .epicInfo .minus {
+  font-size: 1em;
+  background-color: #ee8164;
+  border: 1px solid #e66a4e;
+  padding: 0.725em 0.5em;
+  color: #fff;
+}
+/* line 495, ../sass/app.scss */
+.epicMore .epicInfo .plus {
+  font-size: 1em;
+  background-color: #06c6b1;
+  border: 1px solid #02b49c;
+  padding: 0.725em 0.5em;
+  color: #fff;
+}
+/* line 507, ../sass/app.scss */
+.epicMore .epicInfo .title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #4c4c4c;
+}
+/* line 513, ../sass/app.scss */
+.epicMore .epicInfo .stats {
+  color: #999999;
+  font-size: 0.875em;
+  padding: 0.5em 0em 0.75em 0em;
+  border-bottom: 1px solid #dbdbdb;
+  display: block;
+}
+/* line 521, ../sass/app.scss */
+.epicMore .epicInfo .edit {
+  float: right;
+  color: #e66a4e;
+}
+/* line 526, ../sass/app.scss */
+.epicMore .epicInfo p {
+  color: #999;
+  padding: 1em 0em 0em 0em;
+  font-size: 0.875em;
+}
+/* line 535, ../sass/app.scss */
+.epicMore .rules .subhead {
+  color: #4d4d4d;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 0.875em;
+}
+/* line 542, ../sass/app.scss */
+.epicMore .rules .line {
+  height: 1px;
+  width: 100%;
+  background-color: #ededed;
+  margin-top: 0.25em;
+}
+/* line 549, ../sass/app.scss */
+.epicMore .rules ol {
+  color: #999;
+  padding: 0.5em 0em 1em 1.5em;
+  font-size: 0.875em;
+}
+/* line 554, ../sass/app.scss */
+.epicMore .rules ol .li {
+  padding: 0;
+  margin: 0;
+}
+/* line 563, ../sass/app.scss */
+.epicMore .epicDetailsActions {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+  background-color: #f2f2f2;
+  line-height: 0.15em;
+  font-size: 0.85em;
+  width: 100%;
+}
+/* line 577, ../sass/app.scss */
+.epicMore .epicDetailsActions li {
+  padding: 0;
+  margin: 0;
+}
+/* line 580, ../sass/app.scss */
+.epicMore .epicDetailsActions li a {
+  display: block;
+  color: #808080;
+  height: 3.5em;
+  line-height: 3.5em;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 593, ../sass/app.scss */
+.meter {
+  width: 100%;
+  height: 0.35em;
+  margin-top: 0.05em;
+}
+
+/* line 599, ../sass/app.scss */
+.inner {
+  height: 0.35em;
+}
+
+/* line 605, ../sass/app.scss */
+.forty-five {
+  background-color: #f9e382;
+}
+/* line 607, ../sass/app.scss */
+.forty-five .inner {
+  width: 45%;
+  background-color: #e5b52d;
+}
+
+/* line 613, ../sass/app.scss */
+.one {
+  background-color: #97e8d9;
+}
+/* line 613, ../sass/app.scss */
+.one .inner {
+  width: 1%;
+  background-color: #02b49c;
+}
+
+/* line 614, ../sass/app.scss */
+.two {
+  background-color: #97e8d9;
+}
+/* line 614, ../sass/app.scss */
+.two .inner {
+  width: 2%;
+  background-color: #02b49c;
+}
+
+/* line 615, ../sass/app.scss */
+.three {
+  background-color: #97e8d9;
+}
+/* line 615, ../sass/app.scss */
+.three .inner {
+  width: 3%;
+  background-color: #02b49c;
+}
+
+/* line 616, ../sass/app.scss */
+.four {
+  background-color: #97e8d9;
+}
+/* line 616, ../sass/app.scss */
+.four .inner {
+  width: 4%;
+  background-color: #02b49c;
+}
+
+/* line 617, ../sass/app.scss */
+.five {
+  background-color: #97e8d9;
+}
+/* line 617, ../sass/app.scss */
+.five .inner {
+  width: 5%;
+  background-color: #02b49c;
+}
+
+/* line 618, ../sass/app.scss */
+.six {
+  background-color: #97e8d9;
+}
+/* line 618, ../sass/app.scss */
+.six .inner {
+  width: 6%;
+  background-color: #02b49c;
+}
+
+/* line 619, ../sass/app.scss */
+.seven {
+  background-color: #97e8d9;
+}
+/* line 619, ../sass/app.scss */
+.seven .inner {
+  width: 7%;
+  background-color: #02b49c;
+}
+
+/* line 620, ../sass/app.scss */
+.eight {
+  background-color: #97e8d9;
+}
+/* line 620, ../sass/app.scss */
+.eight .inner {
+  width: 8%;
+  background-color: #02b49c;
+}
+
+/* line 621, ../sass/app.scss */
+.nine {
+  background-color: #97e8d9;
+}
+/* line 621, ../sass/app.scss */
+.nine .inner {
+  width: 9%;
+  background-color: #02b49c;
+}
+
+/* line 622, ../sass/app.scss */
+.ten {
+  background-color: #97e8d9;
+}
+/* line 622, ../sass/app.scss */
+.ten .inner {
+  width: 10%;
+  background-color: #02b49c;
+}
+
+/* line 623, ../sass/app.scss */
+.eleven {
+  background-color: #97e8d9;
+}
+/* line 623, ../sass/app.scss */
+.eleven .inner {
+  width: 11%;
+  background-color: #02b49c;
+}
+
+/* line 624, ../sass/app.scss */
+.twelve {
+  background-color: #97e8d9;
+}
+/* line 624, ../sass/app.scss */
+.twelve .inner {
+  width: 12%;
+  background-color: #02b49c;
+}
+
+/* line 625, ../sass/app.scss */
+.thirteen {
+  background-color: #97e8d9;
+}
+/* line 625, ../sass/app.scss */
+.thirteen .inner {
+  width: 13%;
+  background-color: #02b49c;
+}
+
+/* line 626, ../sass/app.scss */
+.fourteen {
+  background-color: #97e8d9;
+}
+/* line 626, ../sass/app.scss */
+.fourteen .inner {
+  width: 14%;
+  background-color: #02b49c;
+}
+
+/* line 627, ../sass/app.scss */
+.fifteen {
+  background-color: #97e8d9;
+}
+/* line 627, ../sass/app.scss */
+.fifteen .inner {
+  width: 15%;
+  background-color: #02b49c;
+}
+
+/* line 628, ../sass/app.scss */
+.sixteen {
+  background-color: #97e8d9;
+}
+/* line 628, ../sass/app.scss */
+.sixteen .inner {
+  width: 16%;
+  background-color: #02b49c;
+}
+
+/* line 629, ../sass/app.scss */
+.seventeen {
+  background-color: #97e8d9;
+}
+/* line 629, ../sass/app.scss */
+.seventeen .inner {
+  width: 17%;
+  background-color: #02b49c;
+}
+
+/* line 630, ../sass/app.scss */
+.eighteen {
+  background-color: #97e8d9;
+}
+/* line 630, ../sass/app.scss */
+.eighteen .inner {
+  width: 18%;
+  background-color: #02b49c;
+}
+
+/* line 631, ../sass/app.scss */
+.nineteen {
+  background-color: #97e8d9;
+}
+/* line 631, ../sass/app.scss */
+.nineteen .inner {
+  width: 19%;
+  background-color: #02b49c;
+}
+
+/* line 632, ../sass/app.scss */
+.twenty- {
+  background-color: #97e8d9;
+}
+/* line 632, ../sass/app.scss */
+.twenty- .inner {
+  width: 20%;
+  background-color: #02b49c;
+}
+
+/* line 633, ../sass/app.scss */
+.twenty-one {
+  background-color: #97e8d9;
+}
+/* line 633, ../sass/app.scss */
+.twenty-one .inner {
+  width: 21%;
+  background-color: #02b49c;
+}
+
+/* line 634, ../sass/app.scss */
+.twenty-two {
+  background-color: #97e8d9;
+}
+/* line 634, ../sass/app.scss */
+.twenty-two .inner {
+  width: 22%;
+  background-color: #02b49c;
+}
+
+/* line 635, ../sass/app.scss */
+.twenty-three {
+  background-color: #97e8d9;
+}
+/* line 635, ../sass/app.scss */
+.twenty-three .inner {
+  width: 23%;
+  background-color: #02b49c;
+}
+
+/* line 636, ../sass/app.scss */
+.twenty-four {
+  background-color: #97e8d9;
+}
+/* line 636, ../sass/app.scss */
+.twenty-four .inner {
+  width: 24%;
+  background-color: #02b49c;
+}
+
+/* line 637, ../sass/app.scss */
+.twenty-five {
+  background-color: #97e8d9;
+}
+/* line 637, ../sass/app.scss */
+.twenty-five .inner {
+  width: 25%;
+  background-color: #02b49c;
+}
+
+/* line 638, ../sass/app.scss */
+.twenty-six {
+  background-color: #97e8d9;
+}
+/* line 638, ../sass/app.scss */
+.twenty-six .inner {
+  width: 26%;
+  background-color: #02b49c;
+}
+
+/* line 639, ../sass/app.scss */
+.twenty-seven {
+  background-color: #97e8d9;
+}
+/* line 639, ../sass/app.scss */
+.twenty-seven .inner {
+  width: 27%;
+  background-color: #02b49c;
+}
+
+/* line 640, ../sass/app.scss */
+.twenty-eight {
+  background-color: #97e8d9;
+}
+/* line 640, ../sass/app.scss */
+.twenty-eight .inner {
+  width: 28%;
+  background-color: #02b49c;
+}
+
+/* line 641, ../sass/app.scss */
+.twenty-nine {
+  background-color: #97e8d9;
+}
+/* line 641, ../sass/app.scss */
+.twenty-nine .inner {
+  width: 29%;
+  background-color: #02b49c;
+}
+
+/* line 642, ../sass/app.scss */
+.thirty- {
+  background-color: #97e8d9;
+}
+/* line 642, ../sass/app.scss */
+.thirty- .inner {
+  width: 30%;
+  background-color: #02b49c;
+}
+
+/* line 643, ../sass/app.scss */
+.thirty-one {
+  background-color: #97e8d9;
+}
+/* line 643, ../sass/app.scss */
+.thirty-one .inner {
+  width: 31%;
+  background-color: #02b49c;
+}
+
+/* line 644, ../sass/app.scss */
+.thirty-two {
+  background-color: #97e8d9;
+}
+/* line 644, ../sass/app.scss */
+.thirty-two .inner {
+  width: 32%;
+  background-color: #02b49c;
+}
+
+/* line 645, ../sass/app.scss */
+.thirty-three {
+  background-color: #97e8d9;
+}
+/* line 645, ../sass/app.scss */
+.thirty-three .inner {
+  width: 33%;
+  background-color: #02b49c;
+}
+
+/* line 646, ../sass/app.scss */
+.thirty-four {
+  background-color: #97e8d9;
+}
+/* line 646, ../sass/app.scss */
+.thirty-four .inner {
+  width: 34%;
+  background-color: #02b49c;
+}
+
+/* line 647, ../sass/app.scss */
+.thirty-five {
+  background-color: #97e8d9;
+}
+/* line 647, ../sass/app.scss */
+.thirty-five .inner {
+  width: 35%;
+  background-color: #02b49c;
+}
+
+/* line 648, ../sass/app.scss */
+.thirty-six {
+  background-color: #97e8d9;
+}
+/* line 648, ../sass/app.scss */
+.thirty-six .inner {
+  width: 36%;
+  background-color: #02b49c;
+}
+
+/* line 649, ../sass/app.scss */
+.thirty-seven {
+  background-color: #97e8d9;
+}
+/* line 649, ../sass/app.scss */
+.thirty-seven .inner {
+  width: 37%;
+  background-color: #02b49c;
+}
+
+/* line 650, ../sass/app.scss */
+.thirty-eight {
+  background-color: #97e8d9;
+}
+/* line 650, ../sass/app.scss */
+.thirty-eight .inner {
+  width: 38%;
+  background-color: #02b49c;
+}
+
+/* line 651, ../sass/app.scss */
+.thirty-nine {
+  background-color: #97e8d9;
+}
+/* line 651, ../sass/app.scss */
+.thirty-nine .inner {
+  width: 39%;
+  background-color: #02b49c;
+}
+
+/* line 652, ../sass/app.scss */
+.forty- {
+  background-color: #f9e382;
+}
+/* line 652, ../sass/app.scss */
+.forty- .inner {
+  width: 40%;
+  background-color: #e5b52d;
+}
+
+/* line 653, ../sass/app.scss */
+.forty-one {
+  background-color: #f9e382;
+}
+/* line 653, ../sass/app.scss */
+.forty-one .inner {
+  width: 41%;
+  background-color: #e5b52d;
+}
+
+/* line 654, ../sass/app.scss */
+.forty-two {
+  background-color: #f9e382;
+}
+/* line 654, ../sass/app.scss */
+.forty-two .inner {
+  width: 42%;
+  background-color: #e5b52d;
+}
+
+/* line 655, ../sass/app.scss */
+.forty-three {
+  background-color: #f9e382;
+}
+/* line 655, ../sass/app.scss */
+.forty-three .inner {
+  width: 43%;
+  background-color: #e5b52d;
+}
+
+/* line 656, ../sass/app.scss */
+.forty-four {
+  background-color: #f9e382;
+}
+/* line 656, ../sass/app.scss */
+.forty-four .inner {
+  width: 44%;
+  background-color: #e5b52d;
+}
+
+/* line 657, ../sass/app.scss */
+.forty-five {
+  background-color: #f9e382;
+}
+/* line 657, ../sass/app.scss */
+.forty-five .inner {
+  width: 45%;
+  background-color: #e5b52d;
+}
+
+/* line 658, ../sass/app.scss */
+.forty-six {
+  background-color: #f9e382;
+}
+/* line 658, ../sass/app.scss */
+.forty-six .inner {
+  width: 46%;
+  background-color: #e5b52d;
+}
+
+/* line 659, ../sass/app.scss */
+.forty-seven {
+  background-color: #f9e382;
+}
+/* line 659, ../sass/app.scss */
+.forty-seven .inner {
+  width: 47%;
+  background-color: #e5b52d;
+}
+
+/* line 660, ../sass/app.scss */
+.forty-eight {
+  background-color: #f9e382;
+}
+/* line 660, ../sass/app.scss */
+.forty-eight .inner {
+  width: 48%;
+  background-color: #e5b52d;
+}
+
+/* line 661, ../sass/app.scss */
+.forty-nine {
+  background-color: #f9e382;
+}
+/* line 661, ../sass/app.scss */
+.forty-nine .inner {
+  width: 49%;
+  background-color: #e5b52d;
+}
+
+/* line 662, ../sass/app.scss */
+.fifty- {
+  background-color: #f9e382;
+}
+/* line 662, ../sass/app.scss */
+.fifty- .inner {
+  width: 50%;
+  background-color: #e5b52d;
+}
+
+/* line 663, ../sass/app.scss */
+.fifty-one {
+  background-color: #f9e382;
+}
+/* line 663, ../sass/app.scss */
+.fifty-one .inner {
+  width: 51%;
+  background-color: #e5b52d;
+}
+
+/* line 664, ../sass/app.scss */
+.fifty-two {
+  background-color: #f9e382;
+}
+/* line 664, ../sass/app.scss */
+.fifty-two .inner {
+  width: 52%;
+  background-color: #e5b52d;
+}
+
+/* line 665, ../sass/app.scss */
+.fifty-three {
+  background-color: #f9e382;
+}
+/* line 665, ../sass/app.scss */
+.fifty-three .inner {
+  width: 53%;
+  background-color: #e5b52d;
+}
+
+/* line 666, ../sass/app.scss */
+.fifty-four {
+  background-color: #f9e382;
+}
+/* line 666, ../sass/app.scss */
+.fifty-four .inner {
+  width: 54%;
+  background-color: #e5b52d;
+}
+
+/* line 667, ../sass/app.scss */
+.fifty-five {
+  background-color: #f9e382;
+}
+/* line 667, ../sass/app.scss */
+.fifty-five .inner {
+  width: 55%;
+  background-color: #e5b52d;
+}
+
+/* line 668, ../sass/app.scss */
+.fifty-six {
+  background-color: #f9e382;
+}
+/* line 668, ../sass/app.scss */
+.fifty-six .inner {
+  width: 56%;
+  background-color: #e5b52d;
+}
+
+/* line 669, ../sass/app.scss */
+.fifty-seven {
+  background-color: #f9e382;
+}
+/* line 669, ../sass/app.scss */
+.fifty-seven .inner {
+  width: 57%;
+  background-color: #e5b52d;
+}
+
+/* line 670, ../sass/app.scss */
+.fifty-eight {
+  background-color: #f9e382;
+}
+/* line 670, ../sass/app.scss */
+.fifty-eight .inner {
+  width: 58%;
+  background-color: #e5b52d;
+}
+
+/* line 671, ../sass/app.scss */
+.fifty-nine {
+  background-color: #f9e382;
+}
+/* line 671, ../sass/app.scss */
+.fifty-nine .inner {
+  width: 59%;
+  background-color: #e5b52d;
+}
+
+/* line 672, ../sass/app.scss */
+.sixty- {
+  background-color: #f9e382;
+}
+/* line 672, ../sass/app.scss */
+.sixty- .inner {
+  width: 60%;
+  background-color: #e5b52d;
+}
+
+/* line 673, ../sass/app.scss */
+.sixty-one {
+  background-color: #f7a397;
+}
+/* line 673, ../sass/app.scss */
+.sixty-one .inner {
+  width: 61%;
+  background-color: #e66a4e;
+}
+
+/* line 674, ../sass/app.scss */
+.sixty-two {
+  background-color: #f7a397;
+}
+/* line 674, ../sass/app.scss */
+.sixty-two .inner {
+  width: 62%;
+  background-color: #e66a4e;
+}
+
+/* line 675, ../sass/app.scss */
+.sixty-three {
+  background-color: #f7a397;
+}
+/* line 675, ../sass/app.scss */
+.sixty-three .inner {
+  width: 63%;
+  background-color: #e66a4e;
+}
+
+/* line 676, ../sass/app.scss */
+.sixty-four {
+  background-color: #f7a397;
+}
+/* line 676, ../sass/app.scss */
+.sixty-four .inner {
+  width: 64%;
+  background-color: #e66a4e;
+}
+
+/* line 677, ../sass/app.scss */
+.sixty-five {
+  background-color: #f7a397;
+}
+/* line 677, ../sass/app.scss */
+.sixty-five .inner {
+  width: 65%;
+  background-color: #e66a4e;
+}
+
+/* line 678, ../sass/app.scss */
+.sixty-six {
+  background-color: #f7a397;
+}
+/* line 678, ../sass/app.scss */
+.sixty-six .inner {
+  width: 66%;
+  background-color: #e66a4e;
+}
+
+/* line 679, ../sass/app.scss */
+.sixty-seven {
+  background-color: #f7a397;
+}
+/* line 679, ../sass/app.scss */
+.sixty-seven .inner {
+  width: 67%;
+  background-color: #e66a4e;
+}
+
+/* line 680, ../sass/app.scss */
+.sixty-eight {
+  background-color: #f7a397;
+}
+/* line 680, ../sass/app.scss */
+.sixty-eight .inner {
+  width: 68%;
+  background-color: #e66a4e;
+}
+
+/* line 681, ../sass/app.scss */
+.sixty-nine {
+  background-color: #f7a397;
+}
+/* line 681, ../sass/app.scss */
+.sixty-nine .inner {
+  width: 69%;
+  background-color: #e66a4e;
+}
+
+/* line 682, ../sass/app.scss */
+.seventy- {
+  background-color: #f7a397;
+}
+/* line 682, ../sass/app.scss */
+.seventy- .inner {
+  width: 70%;
+  background-color: #e66a4e;
+}
+
+/* line 683, ../sass/app.scss */
+.seventy-one {
+  background-color: #f7a397;
+}
+/* line 683, ../sass/app.scss */
+.seventy-one .inner {
+  width: 71%;
+  background-color: #e66a4e;
+}
+
+/* line 684, ../sass/app.scss */
+.seventy-two {
+  background-color: #f7a397;
+}
+/* line 684, ../sass/app.scss */
+.seventy-two .inner {
+  width: 72%;
+  background-color: #e66a4e;
+}
+
+/* line 685, ../sass/app.scss */
+.seventy-three {
+  background-color: #f7a397;
+}
+/* line 685, ../sass/app.scss */
+.seventy-three .inner {
+  width: 73%;
+  background-color: #e66a4e;
+}
+
+/* line 686, ../sass/app.scss */
+.seventy-four {
+  background-color: #f7a397;
+}
+/* line 686, ../sass/app.scss */
+.seventy-four .inner {
+  width: 74%;
+  background-color: #e66a4e;
+}
+
+/* line 687, ../sass/app.scss */
+.seventy-five {
+  background-color: #f7a397;
+}
+/* line 687, ../sass/app.scss */
+.seventy-five .inner {
+  width: 75%;
+  background-color: #e66a4e;
+}
+
+/* line 688, ../sass/app.scss */
+.seventy-six {
+  background-color: #f7a397;
+}
+/* line 688, ../sass/app.scss */
+.seventy-six .inner {
+  width: 76%;
+  background-color: #e66a4e;
+}
+
+/* line 689, ../sass/app.scss */
+.seventy-seven {
+  background-color: #f7a397;
+}
+/* line 689, ../sass/app.scss */
+.seventy-seven .inner {
+  width: 77%;
+  background-color: #e66a4e;
+}
+
+/* line 690, ../sass/app.scss */
+.seventy-eight {
+  background-color: #f7a397;
+}
+/* line 690, ../sass/app.scss */
+.seventy-eight .inner {
+  width: 78%;
+  background-color: #e66a4e;
+}
+
+/* line 691, ../sass/app.scss */
+.seventy-nine {
+  background-color: #f7a397;
+}
+/* line 691, ../sass/app.scss */
+.seventy-nine .inner {
+  width: 79%;
+  background-color: #e66a4e;
+}
+
+/* line 692, ../sass/app.scss */
+.eighty- {
+  background-color: #f7a397;
+}
+/* line 692, ../sass/app.scss */
+.eighty- .inner {
+  width: 80%;
+  background-color: #e66a4e;
+}
+
+/* line 693, ../sass/app.scss */
+.eighty-one {
+  background-color: #f7a397;
+}
+/* line 693, ../sass/app.scss */
+.eighty-one .inner {
+  width: 81%;
+  background-color: #e66a4e;
+}
+
+/* line 694, ../sass/app.scss */
+.eighty-two {
+  background-color: #f7a397;
+}
+/* line 694, ../sass/app.scss */
+.eighty-two .inner {
+  width: 82%;
+  background-color: #e66a4e;
+}
+
+/* line 695, ../sass/app.scss */
+.eighty-three {
+  background-color: #f7a397;
+}
+/* line 695, ../sass/app.scss */
+.eighty-three .inner {
+  width: 83%;
+  background-color: #e66a4e;
+}
+
+/* line 696, ../sass/app.scss */
+.eighty-four {
+  background-color: #f7a397;
+}
+/* line 696, ../sass/app.scss */
+.eighty-four .inner {
+  width: 84%;
+  background-color: #e66a4e;
+}
+
+/* line 697, ../sass/app.scss */
+.eighty-five {
+  background-color: #f7a397;
+}
+/* line 697, ../sass/app.scss */
+.eighty-five .inner {
+  width: 85%;
+  background-color: #e66a4e;
+}
+
+/* line 698, ../sass/app.scss */
+.eighty-six {
+  background-color: #f7a397;
+}
+/* line 698, ../sass/app.scss */
+.eighty-six .inner {
+  width: 86%;
+  background-color: #e66a4e;
+}
+
+/* line 699, ../sass/app.scss */
+.eighty-seven {
+  background-color: #f7a397;
+}
+/* line 699, ../sass/app.scss */
+.eighty-seven .inner {
+  width: 87%;
+  background-color: #e66a4e;
+}
+
+/* line 700, ../sass/app.scss */
+.eighty-eight {
+  background-color: #f7a397;
+}
+/* line 700, ../sass/app.scss */
+.eighty-eight .inner {
+  width: 88%;
+  background-color: #e66a4e;
+}
+
+/* line 701, ../sass/app.scss */
+.eighty-nine {
+  background-color: #f7a397;
+}
+/* line 701, ../sass/app.scss */
+.eighty-nine .inner {
+  width: 89%;
+  background-color: #e66a4e;
+}
+
+/* line 702, ../sass/app.scss */
+.ninety- {
+  background-color: #f7a397;
+}
+/* line 702, ../sass/app.scss */
+.ninety- .inner {
+  width: 90%;
+  background-color: #e66a4e;
+}
+
+/* line 703, ../sass/app.scss */
+.ninety-one {
+  background-color: #f7a397;
+}
+/* line 703, ../sass/app.scss */
+.ninety-one .inner {
+  width: 91%;
+  background-color: #e66a4e;
+}
+
+/* line 704, ../sass/app.scss */
+.ninety-two {
+  background-color: #f7a397;
+}
+/* line 704, ../sass/app.scss */
+.ninety-two .inner {
+  width: 92%;
+  background-color: #e66a4e;
+}
+
+/* line 705, ../sass/app.scss */
+.ninety-three {
+  background-color: #f7a397;
+}
+/* line 705, ../sass/app.scss */
+.ninety-three .inner {
+  width: 93%;
+  background-color: #e66a4e;
+}
+
+/* line 706, ../sass/app.scss */
+.ninety-four {
+  background-color: #f7a397;
+}
+/* line 706, ../sass/app.scss */
+.ninety-four .inner {
+  width: 94%;
+  background-color: #e66a4e;
+}
+
+/* line 707, ../sass/app.scss */
+.ninety-five {
+  background-color: #f7a397;
+}
+/* line 707, ../sass/app.scss */
+.ninety-five .inner {
+  width: 95%;
+  background-color: #e66a4e;
+}
+
+/* line 708, ../sass/app.scss */
+.ninety-six {
+  background-color: #f7a397;
+}
+/* line 708, ../sass/app.scss */
+.ninety-six .inner {
+  width: 96%;
+  background-color: #e66a4e;
+}
+
+/* line 709, ../sass/app.scss */
+.ninety-seven {
+  background-color: #f7a397;
+}
+/* line 709, ../sass/app.scss */
+.ninety-seven .inner {
+  width: 97%;
+  background-color: #e66a4e;
+}
+
+/* line 710, ../sass/app.scss */
+.ninety-eight {
+  background-color: #f7a397;
+}
+/* line 710, ../sass/app.scss */
+.ninety-eight .inner {
+  width: 98%;
+  background-color: #e66a4e;
+}
+
+/* line 711, ../sass/app.scss */
+.ninety-nine {
+  background-color: #f7a397;
+}
+/* line 711, ../sass/app.scss */
+.ninety-nine .inner {
+  width: 99%;
+  background-color: #e66a4e;
+}
+
+/* line 712, ../sass/app.scss */
+.one-hundred {
+  background-color: #f7a397;
+}
+/* line 712, ../sass/app.scss */
+.one-hundred .inner {
+  width: 100%;
+  background-color: #e66a4e;
+}
+
+/* line 714, ../sass/app.scss */
+.forty-five {
+  background-color: #f9e382;
+}
+/* line 716, ../sass/app.scss */
+.forty-five .inner {
+  width: 45%;
+  background-color: #e5b52d;
+}
+
+/*
+li.green{
+color:green;
+}
+
+li.red{
+color:red;
+}
+
+.blue{
+color:blue;
+}
+
+.black{
+color:black;
+}
+
+.purple{
+color:purple;
+}*/
